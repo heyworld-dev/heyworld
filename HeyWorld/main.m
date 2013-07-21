@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "iPad_AppDelegate.h"
 
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+		if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
+			// if iPad
+			return UIApplicationMain(argc, argv, nil, NSStringFromClass([iPad_AppDelegate class]));
+		}/* else {
+			// if iPhone / iPod touch (in case the project will target iPhone too
+			return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+		}*/
 	}
 }

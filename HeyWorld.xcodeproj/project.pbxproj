@@ -16,6 +16,7 @@
 		FD7DD7B2179C0344009EC534 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7DD7B1179C0344009EC534 /* Default.png */; };
 		FD7DD7B4179C0344009EC534 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7DD7B3179C0344009EC534 /* Default@2x.png */; };
 		FD7DD7B6179C0344009EC534 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7DD7B5179C0344009EC534 /* Default-568h@2x.png */; };
+		FDBEF1DA179C0BD600EA8EDA /* iPad_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBEF1D9179C0BD600EA8EDA /* iPad_AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		FD7DD7B1179C0344009EC534 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FD7DD7B3179C0344009EC534 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FD7DD7B5179C0344009EC534 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FDBEF1D8179C0BD600EA8EDA /* iPad_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPad_AppDelegate.h; sourceTree = "<group>"; };
+		FDBEF1D9179C0BD600EA8EDA /* iPad_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPad_AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,9 @@
 		FD7DD7A5179C0344009EC534 /* HeyWorld */ = {
 			isa = PBXGroup;
 			children = (
+				FDBEF1D4179C0BC600EA8EDA /* Common */,
+				FDBEF1D5179C0BC600EA8EDA /* iPad */,
+				FDBEF1D7179C0BC600EA8EDA /* iPhone */,
 				FD7DD7AE179C0344009EC534 /* AppDelegate.h */,
 				FD7DD7AF179C0344009EC534 /* AppDelegate.m */,
 				FD7DD7A6179C0344009EC534 /* Supporting Files */,
@@ -97,6 +103,37 @@
 				FD7DD7B5179C0344009EC534 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDBEF1D4179C0BC600EA8EDA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FDBEF1D5179C0BC600EA8EDA /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				FDBEF1D6179C0BC600EA8EDA /* UI */,
+				FDBEF1D8179C0BD600EA8EDA /* iPad_AppDelegate.h */,
+				FDBEF1D9179C0BD600EA8EDA /* iPad_AppDelegate.m */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		FDBEF1D6179C0BC600EA8EDA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FDBEF1D7179C0BC600EA8EDA /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +203,7 @@
 			files = (
 				FD7DD7AC179C0344009EC534 /* main.m in Sources */,
 				FD7DD7B0179C0344009EC534 /* AppDelegate.m in Sources */,
+				FDBEF1DA179C0BD600EA8EDA /* iPad_AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +320,7 @@
 				FD7DD7BB179C0344009EC534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
